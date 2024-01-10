@@ -1,0 +1,18 @@
+.container header{
+    margin-bottom: 50px;
+}
+
+.container .content{
+    display: flex;
+}
+
+.container .content img {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.container .content > div,
+.container .content description{
+    flex: 1;
+}
