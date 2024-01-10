@@ -9,6 +9,25 @@
     <!-- Linking CSS -->
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/about.css">
+    <!-- Link scvript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const currentPage = window.location.pathname;
+
+        // Get all navigation links
+        const navLinks = document.querySelectorAll("#navbar a");
+
+        // Loop through each link and check if it matches the current page
+        navLinks.forEach(link => {
+            const linkPath = link.getAttribute("href");
+            if (currentPage === linkPath) {
+                // Apply the styling for the current page
+                link.style.backgroundColor = "#ba8f95ff"; // Background color
+                link.style.color = "white"; // Text color
+            }
+        });
+    });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -17,7 +36,7 @@
                 <img src="../assets/Logo.png" alt="Logo" style="width: 125px; height: auto;">
             </a>
             <a href="/">Home</a>
-            <a href="./about.html">About Us</a>
+            <a href="./about.html" class="active">About Us</a>
             <a href="./services.html">Services</a>
             <div class="dropdown">
                 <button class="dropbtn">Languages</button>

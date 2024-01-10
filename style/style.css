@@ -43,6 +43,11 @@ a {
     color: white;
 }
 
+#navbar  a.active {
+    background-color: #ba8f95ff; 
+    color: white;
+}
+
 #navbar  a:last-child{
     background-color: #392f5a; /* Caribbean Current */
     color: white;
