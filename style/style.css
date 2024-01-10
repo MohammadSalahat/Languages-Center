@@ -5,6 +5,10 @@ body {
     background-color: rgb(167 198 218 / 50%); /* Columbia Blue */
 }
 
+header {
+    margin-bottom: 50px;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,23 +24,27 @@ a {
     z-index: 100;
 }
 
-/* #navbar > a,
-.dropdown{
-    flex: 1;
-} */
 
-#navbar a {
+#navbar  a {
     color: #392f5a; /* Space Cadet */
     font-weight: 600;
     text-decoration: none;
+    border-radius: 5px;
     padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-#navbar a:hover {
-    background-color: #197278ff; /* Caribbean Current */
+#navbar  a:hover {
+    background-color: #ba8f95ff; 
     color: white;
 }
+
+#navbar  a:last-child{
+    background-color: #392f5a; /* Caribbean Current */
+    color: white;
+    border-radius: 20px;
+}
+
 
 .container {
     width: 980px;
@@ -66,7 +74,9 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #197278ff; /* Caribbean Current */
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ba8f95ff; /* Caribbean Current */
     color: white;
 }
 
@@ -122,4 +132,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#navbar .logo a{
+    background-color: transparent !important;
 }
