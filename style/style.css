@@ -48,7 +48,7 @@ a {
     color: white;
 }
 
-#navbar  a:last-child{
+#navbar > a:last-child{
     background-color: #392f5a; /* Caribbean Current */
     color: white;
     border-radius: 20px;
@@ -95,6 +95,7 @@ a {
     background-color: #a7c6daff; /* Columbia Blue */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     z-index: 5;
 }
 
